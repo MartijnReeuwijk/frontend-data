@@ -1,0 +1,19 @@
+{
+  "name": "frontend-data",
+  "version": "1.0.0",
+  "description": "With this CLI app you can filter the data from the OBA api by Gerne, Author, Decenia, and amount of pages",
+  "main": "app.js",
+  "dependencies": {
+    "eslint": "^5.9.0",
+    "oba-api": "^1.0.0",
+    "prettier": "^1.15.2",
+    "standard": "^12.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "boi": "prettier --single-quote --no-semi --write app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

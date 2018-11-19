@@ -48,11 +48,19 @@ Just run the "app" by using this line of code inside the correct folder
 
 -   `Node app.js`
 
+## Linting ✨
+
+For linting i used Prettier
+To run the Prettier use the code below
+
+-   `npm run clean`
+
 ## Built With 🛠️
 
 -   [OBA](https://www.oba.nl/) - OBA
 -   [D3](https://d3js.org/) - D3
--   [Observablehq](https://beta.observablehq.com) - Observablehq Used to test D3 and make the visuals
+-   [Prettier](https://prettier.io/docs/en/options.html) - Prettier.io - Linter
+-   [Observablehq](https://beta.observablehq.com) - Observablehq gebruikt voor visuals
 
 ## Data struggles
 
@@ -82,9 +90,8 @@ I solved this problem by the use of separate function that return the book resul
 I kept the results in a let instead of a straight return so i could console.log it easily to look at the data structure.
 This will keep the rest of the Code cleaner.
 
-### Data output exemple 📝
-
-The data output should look something like this
+### Data output example 📝
+Dit id hoe de data er ongeveer uit zal zien.
 
         {
           title: 'Bewijs het maar',
@@ -99,6 +106,13 @@ The data output should look something like this
           oba_url: 'https://www.oba.nl/home.html'
           }
 
+##### Calculated to meters examples📝
+``
+{ meter: 53, compairer: 'politieke-roman' },
+  { meter: 87, compairer: 'protestants-milieu' },
+  { meter: 403, compairer: 'psychologisch-verhaal' }
+  ``
+
 ## Research questions❓
 
 ### Hypothesis
@@ -106,7 +120,12 @@ The data output should look something like this
 **Hoe veel meter aan boeken heeft de OBA**
 
 #### Sub-questions
-
+1. Hoe hoe veel paginas heeft elk genre?
+2. Hoe bereken je meters uit pages?
+3. Hoe breed is de kaft van elke boek?
+4. Waar ga ik de stapel me vergelijken?
+5. Hoe veel paginas krijg je uit een boom?
+6. Hoe veel bomen staan er in het vondelpark?
 
 ### Research questions findings ❓
 
@@ -126,21 +145,22 @@ The data output should look something like this
   - Vrijheidsbeeld (93m)
   - Eifeltoren (300m)
   - Christ the Redeemer (30m)
-5. **Hoe veel pages krijg je uit een boom?**
-  - 152mm x 229mm boekie
-  - 34808 mm2
-  - 215.9mm by 279.4mm
-  - 60322.46
-  - 42.3% meer van a4 naar boek size
-  - 0.7 / 0.8
 
+5. **Hoe veel pages krijg je uit een boom?**
+  - 152mm x 229mm boekie -> 34808 mm2 oppervlakte
+  - 215.9mm x 279.4mm -> 60322.46mm2 oppervlakte
+  - 42.3% meer van a4 naar boek size - 142.3% dus 11858 pages per boom.
+
+6. **Hoe veel bomen staan er in het vondelpark?**
+  - Uit onderzoek is gebleken dat er in het vondelpark 255 bomen staan
+  - Bomenlijst [Bron](http://www.inhetvondelpark.nl/bomenlijst.html)
 
 
 ## Visualization 👀
-
+Voor de visualisatie ga ik de de boeken stapels vergelijken tot populaire landmarks en of wereldwonders
 
 ### Concept drawing ✏️
-
+### Wireframes ✏️
 
 ## Authors
 
@@ -154,4 +174,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 -   Tech-treck squad
 -   Thanks to [Jsonformatter](https://jsonformatter.curiousconcept.com/) by helping me better understand the data structure.
--  Bas Pieren [Github](https://github.com/BasPieren/)
+-   Bas Pieren [Github](https://github.com/BasPieren/)

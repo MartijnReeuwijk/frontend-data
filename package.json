@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "boi": "prettier --single-quote --no-semi --write app.js"
+    "clean": "prettier --single-quote --no-semi --write *.js"
   },
   "keywords": [],
   "author": "",

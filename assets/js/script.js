@@ -15,39 +15,39 @@ function start() {
 function getData() {
   // this data does get generated from the api
   let data = [
-    { book: "true", meter: 71, compairer: "avonturenroman" },
-    { book: "true", meter: 4, compairer: "bijbels-verhaal" },
-    { book: "true", meter: 33, compairer: "biografie" },
-    { book: "true", meter: 263, compairer: "detective" },
-    { book: "true", meter: 98, compairer: "dieren" },
-    { book: "true", meter: 10, compairer: "doktersverhaal" },
-    { book: "true", meter: 23, compairer: "erotiek" },
-    { book: "true", meter: 0, compairer: "experimentele-roman" },
-    { book: "true", meter: 180, compairer: "familieroman" },
-    { book: "true", meter: 8, compairer: "feministisch-verhaal" },
-    { book: "true", meter: 3, compairer: "homofiel-thema" },
-    { book: "true", meter: 133, compairer: "humor" },
-    { book: "true", meter: 0, compairer: "indisch-milieu" },
-    { book: "true", meter: 1, compairer: "islamitisch-milieu" },
-    { book: "true", meter: 0, compairer: "joods-milieu" },
-    { book: "true", meter: 23, compairer: "kinderleven" },
-    { book: "true", meter: 84, compairer: "oorlog-en-verzet" },
-    { book: "true", meter: 14, compairer: "paarden-pony's" },
-    { book: "true", meter: 53, compairer: "politieke-roman" },
-    { book: "true", meter: 87, compairer: "protestants-milieu" },
-    { book: "true", meter: 403, compairer: "psychologisch-verhaal" },
-    { book: "true", meter: 12, compairer: "racisme" },
-    { book: "true", meter: 251, compairer: "romantisch-verhaal" },
-    { book: "true", meter: 61, compairer: "school" },
-    { book: "true", meter: 184, compairer: "science-fiction" },
-    { book: "true", meter: 94, compairer: "sociaal-politiek-verhaal" },
-    { book: "true", meter: 14, compairer: "spionage" },
-    { book: "true", meter: 34, compairer: "sport" },
-    { book: "true", meter: 35, compairer: "streek-boeren-verhaal" },
-    { book: "true", meter: 384, compairer: "thriller" },
-    { book: "true", meter: 308, compairer: "verhalenbundel" },
-    { book: "true", meter: 10, compairer: "western" },
-    { book: "true", meter: 17, compairer: "zeeverhaal" }
+    { book: "true", meter: 71, compare: "avonturenroman" },
+    { book: "true", meter: 4, compare: "bijbels-verhaal" },
+    { book: "true", meter: 33, compare: "biografie" },
+    { book: "true", meter: 263, compare: "detective" },
+    { book: "true", meter: 98, compare: "dieren" },
+    { book: "true", meter: 10, compare: "doktersverhaal" },
+    { book: "true", meter: 23, compare: "erotiek" },
+    { book: "true", meter: 0, compare: "experimentele-roman" },
+    { book: "true", meter: 180, compare: "familieroman" },
+    { book: "true", meter: 8, compare: "feministisch-verhaal" },
+    { book: "true", meter: 3, compare: "homofiel-thema" },
+    { book: "true", meter: 133, compare: "humor" },
+    { book: "true", meter: 0, compare: "indisch-milieu" },
+    { book: "true", meter: 1, compare: "islamitisch-milieu" },
+    { book: "true", meter: 0, compare: "joods-milieu" },
+    { book: "true", meter: 23, compare: "kinderleven" },
+    { book: "true", meter: 84, compare: "oorlog-en-verzet" },
+    { book: "true", meter: 14, compare: "paarden-pony's" },
+    { book: "true", meter: 53, compare: "politieke-roman" },
+    { book: "true", meter: 87, compare: "protestants-milieu" },
+    { book: "true", meter: 403, compare: "psychologisch-verhaal" },
+    { book: "true", meter: 12, compare: "racisme" },
+    { book: "true", meter: 251, compare: "romantisch-verhaal" },
+    { book: "true", meter: 61, compare: "school" },
+    { book: "true", meter: 184, compare: "science-fiction" },
+    { book: "true", meter: 94, compare: "sociaal-politiek-verhaal" },
+    { book: "true", meter: 14, compare: "spionage" },
+    { book: "true", meter: 34, compare: "sport" },
+    { book: "true", meter: 35, compare: "streek-boeren-verhaal" },
+    { book: "true", meter: 384, compare: "thriller" },
+    { book: "true", meter: 308, compare: "verhalenbundel" },
+    { book: "true", meter: 10, compare: "western" },
+    { book: "true", meter: 17, compare: "zeeverhaal" }
   ];
   // Removes
   let cleanData = data.filter(function(books) {
@@ -64,25 +64,25 @@ function addCompiar(data) {
       book: false,
       meter: 300,
       fill: "url",
-      compairer: "Eifel"
+      compare: "Eifel"
     },
     {
       book: false,
       meter: 93,
       fill: "url",
-      compairer: "Vrijheidsbeeld"
+      compare: "Vrijheidsbeeld"
     },
     {
       book: false,
       meter: 1.7,
       fill: "url",
-      compairer: "persoon"
+      compare: "persoon"
     },
     {
       book: false,
       meter: 30,
       fill: "url",
-      compairer: "Christ the Redeemer"
+      compare: "Christ the Redeemer"
     }
   );
   return data;
@@ -92,7 +92,7 @@ function createButtons(data) {
   data.forEach(objects => {
     if (objects.book === "true") {
       option = document.createElement("option");
-      option.value = option.textContent = objects.compairer;
+      option.value = option.textContent = objects.compare;
       selectOptions.appendChild(option);
     }
   });
@@ -118,7 +118,7 @@ function d3Magic(data) {
 
   let x = d3
     .scaleBand()
-    .domain(data.map(d => d.compairer))
+    .domain(data.map(d => d.compare))
     .range([margin.left, width - margin.right])
     .padding(0.1);
 
@@ -148,21 +148,22 @@ function d3Magic(data) {
     .data(data)
     .enter()
     .append("rect")
-    .attr("x", d => x(d.compairer))
+    .attr("x", d => x(d.compare))
     .attr("y", d => y(d.meter))
     .attr("height", d => y(0) - y(d.meter))
     .attr("width", x.bandwidth())
+    .attr("fill", d => (d.book == "true") ? '#ffd59b' : '#6CB7B5' )
     .on("mouseover", function(d) {
       d3.select(this)
         .attr("rect", 10)
         .transition()
-        .style("fill", "#8b0000");
+        .style("fill", d => (d.book == "true") ? '#8b0000' : '#6c94b7' )
     })
     .on("mouseout", function(d) {
       d3.select(this)
         .attr("rect", 10)
         .transition()
-        .style("fill", "#ffd59b");
+        .style("fill", d => (d.book == "true") ? '#ffd59b' : '#6CB7B5' )
     });
 
   svg

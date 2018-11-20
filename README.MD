@@ -91,8 +91,9 @@ I kept the results in a let instead of a straight return so i could console.log 
 This will keep the rest of the Code cleaner.
 
 ### Data output example 📝
+##### Standard use object
 Dit id hoe de data er ongeveer uit zal zien.
-
+```
         {
           title: 'Bewijs het maar',
           author: 'Rudy Soetewey',
@@ -105,59 +106,69 @@ Dit id hoe de data er ongeveer uit zal zien.
           id: '|oba-catalogus|1130214',
           oba_url: 'https://www.oba.nl/home.html'
           }
-
+```
 ##### Calculated to meters examples📝
-``
-{ meter: 53, compairer: 'politieke-roman' },
-  { meter: 87, compairer: 'protestants-milieu' },
-  { meter: 403, compairer: 'psychologisch-verhaal' }
-  ``
+```
+{ meter: 53, compare: 'politieke-roman' },
+  { meter: 87, compare: 'protestants-milieu' },
+  { meter: 403, compare: 'psychologisch-verhaal' }
+  ```
 
 ## Research questions❓
 
 ### Hypothesis
 
-**Hoe veel meter aan boeken heeft de OBA**
+**Hoe veel meter aan boeken heeft de OBA?**
 
 #### Sub-questions
-1. Hoe hoe veel paginas heeft elk genre?
-2. Hoe bereken je meters uit pages?
-3. Hoe breed is de kaft van elke boek?
-4. Waar ga ik de stapel me vergelijken?
-5. Hoe veel paginas krijg je uit een boom?
-6. Hoe veel bomen staan er in het vondelpark?
+1. How many pages do all the pages have?
+2. How do you calculated the size of all combined pages?
+3. How thick is the binding of a average book
+4. Which objects / Landmarks will i use to compare the height?
+
+##### Questions later added
+At first i thought the previous questions didn't give enough inside in the visualization of the books. So i added some question about the amount of forest needed to get cut down.
+This will give a more indepth visual.
+5. How many book pages do you get from a average tree?
+6. How many trees are there in the "vondelpark?"
 
 ### Research questions findings ❓
 
-1.  **Hoe veel paginas per boek**
-  - Gemiddelde van paginas is 400
+1.  **How many pages does a book have?**
+  - The average is about 400
 
-2.  **Bereken de meters**
--   Zo bereken je de hoeveelheid meter de boeken zijn met gemiddelde aantal paginas
+2.  **How do you calculated the thickness of a book?**
+-   This is the calculation for the size of an average book
 -   ```var bookmeters = parseInt((amount * 400 / 131 + amount * 0.5) / 100, 10)```
 
-3.  **Hoe breed is een kaft?**
-  - Een kaft is gemiddeld 0.5cm Zie onderzoeks foto
+3.  **What is the size of the binding?**
+  - The binding is 0.5CM in total (See pic)
+  <details>
+  <summary>Picture</summary>
+  Picture of me doing research about the binding
+ **Martijn Reeuwijk** - [MartijnReeuwijk](https://github.com/MartijnReeuwijk)
+  <details>
 
-4.  **Waar ga ik de hoogte me vergelijken?**
-  - Schrijver (1.7m)
+4.  **Which objects / Landmarks will i use to compare the height?**
+  - A famous writer (1.7m)
   - OBA (Mail klantenserv)
-  - Vrijheidsbeeld (93m)
-  - Eifeltoren (300m)
+  - Statue of liberty (93m)
+  - Eifel tower (300m)
   - Christ the Redeemer (30m)
 
-5. **Hoe veel pages krijg je uit een boom?**
-  - 152mm x 229mm boekie -> 34808 mm2 oppervlakte
-  - 215.9mm x 279.4mm -> 60322.46mm2 oppervlakte
-  - 42.3% meer van a4 naar boek size - 142.3% dus 11858 pages per boom.
+5. **How many book pages do you get from a average tree**
+  - 152mm x 229mm book -> 34808 mm2 surface
+  - 215.9mm x 279.4mm -> 60322.46mm2 surface
+  - 42.3% more than a A4 - 142.3% so 11858 pages.
 
-6. **Hoe veel bomen staan er in het vondelpark?**
-  - Uit onderzoek is gebleken dat er in het vondelpark 255 bomen staan
-  - Bomenlijst [Bron](http://www.inhetvondelpark.nl/bomenlijst.html)
+6. **How many trees are there in the "vondelpark?"**
+  - Amsterdam counted the trees in the vondelpark there are 255 trees there
+  - Source [Bron](http://www.inhetvondelpark.nl/bomenlijst.html)
 
 
 ## Visualization 👀
-Voor de visualisatie ga ik de de boeken stapels vergelijken tot populaire landmarks en of wereldwonders
+For the visualization I will compare the stack of books with famous landmarks and writers.
+Also i compare the genres and how many trees it took to makes all the books.
 
 ### Concept drawing ✏️
 ### Wireframes ✏️

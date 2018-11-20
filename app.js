@@ -186,7 +186,7 @@ function bookthickness(genres) {
       ((boeken.count * 400) / 131 + boeken.count * 0.5) / 100,
       10
     );
-    booksinmeters.push({book:"true", meter: bookmeters, compairer: boeken.genre });
+    booksinmeters.push({book:"true", meter: bookmeters, compare: boeken.genre });
   });
   console.log(booksinmeters);
 }

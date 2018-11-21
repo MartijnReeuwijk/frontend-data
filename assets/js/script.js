@@ -1,19 +1,13 @@
 console.log("Easy peasy japaneasy");
-// import { data } from './data.js'
-start();
+let cleanData = getData();
+let addCompair = addCompiar(cleanData);
+// console.log(addCompair);
+createButtons(cleanData);
+createChart(addCompair);
+sortByMetersButton(addCompair);
+d3Magic(addCompair);
 
-function start() {
-  let cleandata = getData();
-  let addCompair = addCompiar(cleandata);
-  createButtons(cleandata);
-  createChart(addCompair);
-  d3Magic(addCompair);
-  sortByMeters(addCompair);
-  // console.log(addCompair);
-}
-// will fix this later
 function getData() {
-  // this data does get generated from the api
   let data = [
     { book: "true", meter: 71, compare: "avonturenroman" },
     { book: "true", meter: 4, compare: "bijbels-verhaal" },
@@ -53,18 +47,16 @@ function getData() {
   let cleanData = data.filter(function(books) {
     return books.meter > 0;
   });
-
   return cleanData;
 }
-
-function addCompiar(data) {
+function addCompiar(cleanData) {
   // This is so when the data gets generated ill aways add these
-  data.push(
+  cleanData.push(
     {
       book: false,
       meter: 300,
-      fill: "url",
-      compare: "Eifel"
+      fill: "/assets/svg/landmark.svg",
+      compare: "Eifel toren"
     },
     {
       book: false,
@@ -76,7 +68,7 @@ function addCompiar(data) {
       book: false,
       meter: 1.7,
       fill: "url",
-      compare: "persoon"
+      compare: "Persoon"
     },
     {
       book: false,
@@ -85,11 +77,12 @@ function addCompiar(data) {
       compare: "Christ the Redeemer"
     }
   );
-  return data;
+  return cleanData;
 }
-function createButtons(data) {
+function createButtons(cleanData) {
   let selectOptions = document.getElementById("selectOptions");
-  data.forEach(objects => {
+
+  cleanData.forEach(objects => {
     if (objects.book === "true") {
       option = document.createElement("option");
       option.value = option.textContent = objects.compare;
@@ -98,20 +91,40 @@ function createButtons(data) {
   });
 }
 
-function sortByMeters(data) {
-  let sort = document.getElementById("SortByHeight").value;
-  console.log(sort);
-  data.sort(function(x, y) {
-    return d3.ascending(x.meter, y.meter);
+function sortByGenre(cleanData) {
+  let genreSelected = cleanData.filter(function(object) {
+    let value = document.getElementById("selectOptions").value;
+    return object.compare == value;
   });
-  if (sort === "true") {
-    d3Magic(data);
-  }
+  let landmarks = cleanData.filter(function(object) {
+    return object.book === false
+  });
+  let genreFilter = genreSelected.concat(landmarks)
+  d3.selectAll("rect.bar").remove();
+  d3.selectAll("text").remove();
+  d3Magic(genreFilter);
 }
 
+function sortByMetersButton() {
+  let sort = document.getElementById("SortByHeight").checked;
+  if (sort === true) {
+    sortByMeters(cleanData);
+  } else {
+    d3Magic(cleanData);
+  }
+}
+function sortByMeters(cleanData) {
+  d3.selectAll("rect.bar").remove();
+  d3.selectAll("text").remove();
+  cleanData.sort(function(x, y) {
+    return d3.ascending(x.meter, y.meter);
+  });
+  d3Magic(cleanData);
+}
 function createChart(data) {}
 
 function d3Magic(data) {
+  // console.log(data);
   let height = 500;
   let width = 900;
   let margin = { top: 20, right: 0, bottom: 30, left: 40 };
@@ -141,6 +154,20 @@ function d3Magic(data) {
 
   //#ffffe0 #ffd59b #ffa474 #f47461 #db4551 #b81b34 #8b0000
   const svg = d3.select("svg");
+
+  // svg.append("defs")
+  // .data(data)
+  //
+  //     .append("pattern")
+  //     .attr("id", "landmarks")
+  //     .attr('patternUnits', 'userSpaceOnUse')
+  //     .attr("height", d => y(0) - y(d.meter))
+  //     .attr("width", x.bandwidth())
+  //     .append("image")
+  //     .attr("xlink:href", d => y(d.fill))
+  //     .attr("height", d => y(0) - y(d.meter))
+  //     .attr("width", x.bandwidth());
+
   svg
     .append("g")
     .attr("fill", "#ffd59b")
@@ -148,38 +175,45 @@ function d3Magic(data) {
     .data(data)
     .enter()
     .append("rect")
+    .classed("bar", true)
     .attr("x", d => x(d.compare))
     .attr("y", d => y(d.meter))
     .attr("height", d => y(0) - y(d.meter))
     .attr("width", x.bandwidth())
-    .attr("fill", d => (d.book == "true") ? '#ffd59b' : '#6CB7B5' )
+    .attr("fill", d => (d.book == "true" ? "#ffd59b" : "#6CB7B5"))
     .on("mouseover", function(d) {
       d3.select(this)
         .attr("rect", 10)
         .transition()
-        .style("fill", d => (d.book == "true") ? '#8b0000' : '#6c94b7' )
+        .style("fill", d => (d.book == "true" ? "#8b0000" : "#6c94b7"));
     })
     .on("mouseout", function(d) {
       d3.select(this)
         .attr("rect", 10)
         .transition()
-        .style("fill", d => (d.book == "true") ? '#ffd59b' : '#6CB7B5' )
+        .style("fill", d => (d.book == "true" ? "#ffd59b" : "#6CB7B5"));
     });
 
   svg
     .append("g")
     .call(xAxis)
     .selectAll("text")
+    // .classed("bar", true)
     .style("text-anchor", "end")
     .attr("dx", "-.8em")
     .attr("dy", ".15em")
     .attr("transform", "rotate(-65)");
 
   svg.append("g").call(yAxis);
+
+  svg.append("text")
+      .data(data)
+            .attr("width", x.bandwidth())
+            .attr("height", d => y(0) - y(d.meter))
+            .attr("dy", ".35em")
+            .text(function(d, i) { return d[i]; });
 }
 
-// chart = {
+// document.getElementById("SortByHeight").addEventListener("click", sortByMeters());
 
-// console.log(data);
-// return svg.node();
-// }
+// document.getElementById('test').onclick=function () { alert('did stuff #1'); }

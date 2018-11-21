@@ -9,8 +9,8 @@
   </head>
   <body>
 
-    <select id="selectOptions"></select>
-    <input type="checkbox" id="SortByHeight" name="sort" value="">
+    <select id="selectOptions" onchange="sortByGenre(cleanData)"></select>
+    <input type="checkbox" id="SortByHeight" onclick="sortByMetersButton()" name="sort" value="">
     <label for="sort">Sort by height</label>
 
     <svg style="

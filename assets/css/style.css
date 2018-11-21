@@ -1,3 +1,13 @@
 .labels{
   text-align: center;
 }
+.block{
+  float: left;
+  width: 75%;
+  max-width: 900px;
+}
+.block:last-of-type{
+  width: 25%;
+  max-width: 200px;
+
+}

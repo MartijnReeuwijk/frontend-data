@@ -2,26 +2,30 @@
 
 With this CLI app you can filter the data from the OBA api by Gerne, Author, Decenia, and amount of pages
 
--   [OBA-API 📚](#oba-api---)
-    -   [Getting Started 🎬](#getting-started---)
-    -   [Prerequisites](#prerequisites)
-    -   [Installation 💾](#installation---)
-    -   [Running 🏃‍♂️](#running------)
-    -   [Built With 🛠️](#built-with----)
-    -   [Data struggles](#data-struggles)
-        -   [Issue's DirtyData 🛁](#issue-s-dirtydata---)
-        -   [Data Nesting 🐦](#data-nesting---)
-        -   [Data output exemple 📝](#data-output-exemple---)
-    -   [Research questions❓](#research-questions-)
-        -   [Hypothesis](#hypothesis)
-        -   [Research questions findings ❓](#research-questions-findings--)
-    -   [Visualization 👀](#visualization---)
-        -   [Concept drawing ✏️](#concept-drawing---)
-    -   [Other files](#other-files)
-    -   [Authors](#authors)
-    -   [License](#license)
-    -   [Acknowledgments and Thanks](#acknowledgments-and-thanks)
-
+- [OBA-API 📚](#oba-api---)
+  * [Getting Started 🎬](#getting-started---)
+  * [Prerequisites](#prerequisites)
+  * [Installation 💾](#installation---)
+  * [Running 🏃‍♂️](#running------)
+  * [Linting ✨](#linting--)
+  * [Built With 🛠️](#built-with----)
+  * [Data struggles](#data-struggles)
+    + [Issue's DirtyData 🛁](#issue-s-dirtydata---)
+    + [Data Nesting 🐦](#data-nesting---)
+    + [Data output example 📝](#data-output-example---)
+        * [Standard use object](#standard-use-object)
+        * [Calculated to meters examples📝](#calculated-to-meters-examples--)
+  * [Research questions❓](#research-questions-)
+    + [Hypothesis](#hypothesis)
+      - [Sub-questions](#sub-questions)
+        * [Questions later added](#questions-later-added)
+    + [Research questions findings ❓](#research-questions-findings--)
+  * [Visualization 👀](#visualization---)
+    + [Concept drawing ✏️](#concept-drawing---)
+    + [Wireframes ✏️](#wireframes---)
+  * [Authors](#authors)
+  * [License](#license)
+  * [Acknowledgments and Thanks](#acknowledgments-and-thanks)
 ## Getting Started 🎬
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -151,7 +155,7 @@ This will give a more indepth visual.
 
 4.  **Which objects / Landmarks will i use to compare the height?**
   - A famous writer (1.7m)
-  - OBA (Mail klantenserv)
+  - OBA ??
   - Statue of liberty (93m)
   - Eifel tower (300m)
   - Christ the Redeemer (30m)

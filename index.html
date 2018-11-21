@@ -14,13 +14,18 @@
     <input type="checkbox" id="SortByHeight" onclick="sortByMetersButton()" name="sort" value="">
     <label for="sort">Sort by height</label>
 
-    <input type="checkbox" id="trees" onclick="trees()" name="trees" value="">
-    <label for="trees">How many trees did this cost?</label>
+
+<div class="block">
+
 
     <svg style="
     width: 100vw;
     height: 100vh;
     "></svg>
+</div>
+    <div class="block">
+      <p>This genre cost about <span id="treetext">100</span> trees to produce!</p>
+    </div>
 
   </body>
   <script src="assets/js/script.js"></script>

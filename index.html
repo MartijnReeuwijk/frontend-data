@@ -5,13 +5,17 @@
     <title>D3 interactief kaartje</title>
     <!-- <script src="app.js"></script> -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 
   </head>
   <body>
-
+<h1>Height of the genres in meters</h1>
     <select id="selectOptions" onchange="sortByGenre(cleanData)"></select>
     <input type="checkbox" id="SortByHeight" onclick="sortByMetersButton()" name="sort" value="">
     <label for="sort">Sort by height</label>
+
+    <input type="checkbox" id="trees" onclick="trees()" name="trees" value="">
+    <label for="trees">How many trees did this cost?</label>
 
     <svg style="
     width: 100vw;

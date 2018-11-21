@@ -147,7 +147,7 @@ This will give a more indepth visual.
   <summary>Picture</summary>
   Picture of me doing research about the binding
  **Martijn Reeuwijk** - [MartijnReeuwijk](https://github.com/MartijnReeuwijk)
-  <details>
+  </details>
 
 4.  **Which objects / Landmarks will i use to compare the height?**
   - A famous writer (1.7m)

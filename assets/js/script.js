@@ -1,7 +1,6 @@
-console.log("Linked");
 let cleanData = getData();
 let addCompair = addCompiar(cleanData);
-createButtons(cleanData);
+createOptions(cleanData);
 createChart(addCompair);
 sortByMetersButton(addCompair);
 d3BarChart(addCompair);
@@ -78,7 +77,7 @@ function addCompiar(cleanData) {
   );
   return cleanData;
 }
-function createButtons(cleanData) {
+function createOptions(cleanData) {
   let selectOptions = document.getElementById("selectOptions");
 
   cleanData.forEach(objects => {
@@ -129,11 +128,8 @@ function tree(genreFilter) {
   // Calculated % of trees in vondelpark
 
   let treesVondelpark = 255
-  let treesPercent = parseFloat(treesVondelpark / 100 * trees).toFixed(2);
+  let treesPercent = parseFloat((trees / treesVondelpark) * 100).toFixed(2);
   parkElement.textContent = treesPercent + "%";
-
-  //  - Amsterdam counted the trees in the vondelpark there are 255 trees there
-
 }
 function createChart(data) {}
 function d3BarChart(data) {

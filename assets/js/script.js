@@ -120,10 +120,20 @@ function sortByMeters(cleanData) {
   d3BarChart(cleanData);
 }
 function tree(genreFilter) {
-  let textplace = document.getElementById("treetext");
+  let treeElement = document.getElementById("treetext");
+  let parkElement = document.getElementById("park");
+
   // Calculated amount of trees required per genre check readme for more info
   let trees = parseFloat((genreFilter[0].meter * 131) / 11858).toFixed(2);
-  textplace.textContent = trees;
+  treeElement.textContent = trees;
+  // Calculated % of trees in vondelpark
+
+  let treesVondelpark = 255
+  let treesPercent = parseFloat(treesVondelpark / 100 * trees).toFixed(2);
+  parkElement.textContent = treesPercent + "%";
+
+  //  - Amsterdam counted the trees in the vondelpark there are 255 trees there
+
 }
 function createChart(data) {}
 function d3BarChart(data) {

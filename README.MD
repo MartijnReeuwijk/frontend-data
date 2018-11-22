@@ -133,8 +133,9 @@ Dit id hoe de data er ongeveer uit zal zien.
 ##### Questions later added
 At first i thought the previous questions didn't give enough inside in the visualization of the books. So i added some question about the amount of forest needed to get cut down.
 This will give a more indepth visual.
-5. How many book pages do you get from a average tree?
-6. How many trees are there in the "vondelpark?"
+
+- How many book pages do you get from a average tree?
+- How many trees are there in the "vondelpark?"
 
 ### Research questions findings ❓
 
@@ -173,6 +174,7 @@ This will give a more indepth visual.
 ## Visualization 👀
 For the visualization I will compare the stack of books with famous landmarks and writers.
 Also i compare the genres and how many trees it took to makes all the books.
+- In the end i was notable to fill a bar with a image this makes it look less fancy
 
 ### Concept drawing ✏️
 ### Wireframes ✏️

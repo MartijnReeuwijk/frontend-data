@@ -177,8 +177,8 @@ Also i compare the genres and how many trees it took to makes all the books.
 - In the end i was notable to fill a bar with a image this makes it look less fancy
 
 ### Wireframes✏️
-![Drawing one ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingone.jpg)
-![Drawing two ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingtwo.jpg)
+![Drawing one ](https://github.com/MartijnReeuwijk/frontend-data/blob/master/assets/img/drawingone.jpg)
+![Drawing two ](https://github.com/MartijnReeuwijk/frontend-data/blob/master/assets/img/drawingtwo.jpg)
 
 
 ## Authors

@@ -122,7 +122,7 @@ Dit id hoe de data er ongeveer uit zal zien.
 
 ### Hypothesis
 
-**Hoe veel meter aan boeken heeft de OBA?**
+**How high would a tower of all books be?**
 
 #### Sub-questions
 1. How many pages do all the pages have?

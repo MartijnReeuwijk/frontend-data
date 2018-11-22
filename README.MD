@@ -2,30 +2,30 @@
 
 With this CLI app you can filter the data from the OBA api by Gerne, Author, Decenia, and amount of pages
 
-- [OBA-API 📚](#oba-api---)
-  * [Getting Started 🎬](#getting-started---)
+- [OBA-API 📚](#oba-api)
+  * [Getting Started 🎬](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [Installation 💾](#installation---)
-  * [Running 🏃‍♂️](#running------)
-  * [Linting ✨](#linting--)
-  * [Built With 🛠️](#built-with----)
+  * [Installation 💾](#installation)
+  * [Running 🏃‍♂️](#running)
+  * [Linting ✨](#linting)
+  * [Built With 🛠️](#built-with)
   * [Data struggles](#data-struggles)
-    + [Issue's DirtyData 🛁](#issue-s-dirtydata---)
-    + [Data Nesting 🐦](#data-nesting---)
-    + [Data output example 📝](#data-output-example---)
+    + [Issue's DirtyData 🛁](#issue-s-dirtydata)
+    + [Data Nesting 🐦](#data-nesting)
+    + [Data output example 📝](#data-output-example)
         * [Standard use object](#standard-use-object)
-        * [Calculated to meters examples📝](#calculated-to-meters-examples--)
-  * [Research questions❓](#research-questions-)
+        * [Calculated to meters examples📝](#calculated-to-meters-examples)
+  * [Research questions❓](#research-questions)
     + [Hypothesis](#hypothesis)
       - [Sub-questions](#sub-questions)
         * [Questions later added](#questions-later-added)
-    + [Research questions findings ❓](#research-questions-findings--)
-  * [Visualization 👀](#visualization---)
-    + [Wireframes✏️](#wireframes--)
+    + [Research questions findings ❓](#research-questions-findings)
+  * [Visualization 👀](#visualization)
+    + [Wireframes✏️](#wireframes)
   * [Authors](#authors)
   * [License](#license)
   * [Acknowledgments and Thanks](#acknowledgments-and-thanks)
-  
+
 ## Getting Started 🎬
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -177,8 +177,8 @@ Also i compare the genres and how many trees it took to makes all the books.
 - In the end i was notable to fill a bar with a image this makes it look less fancy
 
 ### Wireframes✏️
-![Drawing one ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingone.jpg"Wireframe")
-![Drawing two ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingtwo.jpg"Wireframe")
+![Drawing one ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingone.jpg)
+![Drawing two ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingtwo.jpg)
 
 
 ## Authors

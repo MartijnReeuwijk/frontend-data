@@ -21,11 +21,11 @@ With this CLI app you can filter the data from the OBA api by Gerne, Author, Dec
         * [Questions later added](#questions-later-added)
     + [Research questions findings ❓](#research-questions-findings--)
   * [Visualization 👀](#visualization---)
-    + [Concept drawing ✏️](#concept-drawing---)
-    + [Wireframes ✏️](#wireframes---)
+    + [Wireframes✏️](#wireframes--)
   * [Authors](#authors)
   * [License](#license)
   * [Acknowledgments and Thanks](#acknowledgments-and-thanks)
+  
 ## Getting Started 🎬
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -177,8 +177,8 @@ Also i compare the genres and how many trees it took to makes all the books.
 - In the end i was notable to fill a bar with a image this makes it look less fancy
 
 ### Wireframes✏️
-![Drawing one ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingone.jpg)
-![Drawing two ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingtwo.jpg)
+![Drawing one ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingone.jpg"Wireframe")
+![Drawing two ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingtwo.jpg"Wireframe")
 
 
 ## Authors

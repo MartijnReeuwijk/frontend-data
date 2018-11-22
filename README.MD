@@ -4,7 +4,7 @@ With this CLI app you can filter the data from the OBA api by Gerne, Author, Dec
 
 - [OBA-API 📚](#oba-api-)
   * [Getting Started 🎬](#getting-started-)
-  * [Prerequisites](#prerequisites-)
+  * [Prerequisites](#prerequisites)
   * [Installation 💾](#installation-)
   * [Running 🏃‍♂️](#running-)
   * [Linting ✨](#linting-)
@@ -21,7 +21,7 @@ With this CLI app you can filter the data from the OBA api by Gerne, Author, Dec
         * [Questions later added](#questions-later-added)
     + [Research questions findings ❓](#research-questions-findings-)
   * [Visualization 👀](#visualization-)
-    + [Wireframes✏️](#wireframes-)
+    + [Wireframes✏️](#wireframes)
   * [Authors](#authors)
   * [License](#license)
   * [Acknowledgments and Thanks](#acknowledgments-and-thanks)

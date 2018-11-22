@@ -151,7 +151,7 @@ This will give a more indepth visual.
   <details>
   <summary>Picture</summary>
   Picture of me doing research about the binding
- **Martijn Reeuwijk** - [MartijnReeuwijk](https://github.com/MartijnReeuwijk)
+  ![Spine Research](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/spine.jpg)
   </details>
 
 4.  **Which objects / Landmarks will i use to compare the height?**
@@ -176,8 +176,10 @@ For the visualization I will compare the stack of books with famous landmarks an
 Also i compare the genres and how many trees it took to makes all the books.
 - In the end i was notable to fill a bar with a image this makes it look less fancy
 
-### Concept drawing ✏️
-### Wireframes ✏️
+### Wireframes✏️
+![Drawing one ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingone.jpg)
+![Drawing two ](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/drawingtwo.jpg)
+
 
 ## Authors
 

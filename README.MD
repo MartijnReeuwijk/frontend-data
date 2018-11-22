@@ -8,7 +8,7 @@ With this CLI app you can filter the data from the OBA api by Gerne, Author, Dec
   * [Installation 💾](#installation-)
   * [Running 🏃‍♂️](#running-)
   * [Linting ✨](#linting-)
-  * [Built With 🛠️](#built-with-)
+  * [Build With 🛠️](#built-with-)
   * [Data struggles](#data-struggles-)
     + [Issue's DirtyData 🛁](#issue-s-dirtydata-)
     + [Data Nesting 🐦](#data-nesting-)
@@ -59,7 +59,7 @@ To run the Prettier use the code below
 
 -   `npm run clean`
 
-## Built With 🛠️
+## Build With 🛠️
 
 -   [OBA](https://www.oba.nl/) - OBA
 -   [D3](https://d3js.org/) - D3

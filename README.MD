@@ -151,7 +151,7 @@ This will give a more indepth visual.
   <details>
   <summary>Picture</summary>
   Picture of me doing research about the binding
-  ![Spine Research](https://github.com/MartijnReeuwijk/frontend-data/tree/master/assets/img/spine.jpg)
+  ![Spine Research](https://github.com/MartijnReeuwijk/frontend-data/blob/master/assets/img/spine.jpg)
   </details>
 
 4.  **Which objects / Landmarks will i use to compare the height?**
